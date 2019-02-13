@@ -1,10 +1,10 @@
 // сортировка элементов массива в файле
-// fname - имя файла
-void sort(const char * fname)
+// test - имя файла
+void sort(const char * test)
 {
 	// нужно открыть файл и прочитать количество элементов
 	FILE * f;
-	f = fopen(fname, "rb+");
+	f = fopen(test, "rb+");
 	int n;
 	fread(&n, sizeof(int), 1, f); // получили кол-во элементов
 	int * tmp;
